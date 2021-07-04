@@ -2,3 +2,7 @@
 
 language: R
 cache: packages
+
+script:
+  - R -e 'install.packages("BiocManager")'
+  - R -e 'BiocManager::install(version = "3.13")'
