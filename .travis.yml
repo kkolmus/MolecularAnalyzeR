@@ -5,8 +5,6 @@ sudo: false
 cache: packages
 R:
   - bioc-devel
-dist: trusty
-
 script:
     - R -e 'install.packages("BiocManager")'
     - R -e 'BiocManager::install(version = "3.13")'
