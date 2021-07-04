@@ -5,6 +5,12 @@ The goal of MolecularAnalyzeR is to checking correlation between gene
 expression and copy number variation for cohorts of patients analyzed
 within The Cancer Genome Atlas project.
 
+<!-- badges: start -->
+
+[![Travis build
+status](https://travis-ci.com/kkolmus/MolecularAnalyzeR.svg?branch=main)](https://travis-ci.com/kkolmus/MolecularAnalyzeR)
+<!-- badges: end -->
+
 ## Installation
 
 In order to install the MolecularAnalyzeR package, you should
