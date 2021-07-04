@@ -9,5 +9,9 @@ env:
 
 script:
   - Rscript -e 'BiocManager::version()'
-  - Rscript -e 'BiocManager::install(version = "3.12", ask = FALSE)'
+  - Rscript -e 'BiocManager::install(version = "3.14", ask = FALSE)'
   - Rscript -e 'BiocManager::version()'
+  - Rscript -e 'BiocManager::version()'
+  - Rscript -e 'BiocManager::install("TCGAbiolinks")'
+  - Rscript -e 'BiocManager::install("DESeq2")'
+  - Rscript -e 'BiocManager::install("biomaRt")'
