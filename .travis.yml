@@ -9,7 +9,7 @@ env:
 
 script:
   - Rscript -e 'BiocManager::version()'
-  - Rscript -e 'BiocManager::install(version = "3.14", ask = FALSE)'
+  - Rscript -e 'BiocManager::install(version = "3.14")'
   - Rscript -e 'BiocManager::version()'
   - Rscript -e 'BiocManager::version()'
   - Rscript -e 'BiocManager::install("TCGAbiolinks")'
