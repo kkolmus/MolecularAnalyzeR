@@ -42,5 +42,6 @@ among copy number variations of gene 1.
 \dontrun{visualizeGenotypeComparison(data,
                                      gene1 = "CDK11A",
                                      gene2 = "CFLAR",
-                                     method = "vst")}
+                                     method = "vst",
+                                     threshold = 10)}
 }
