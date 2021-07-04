@@ -5,12 +5,18 @@ The goal of MolecularAnalyzeR is to checking correlation between gene
 expression and copy number variation for cohorts of patients analyzed
 within The Cancer Genome Atlas project.
 
-According to Travis <!-- $ Rscript -e 'sessionInfo()' -->
-<!-- R version 4.0.2 (2020-06-22) -->
-<!-- Platform: x86_64-pc-linux-gnu (64-bit) -->
-<!-- Running under: Ubuntu 16.04.6 LTS --> which exploits Bioconductor
-3.12. In my package, I am dependent on Bioconductor 3.14 with R 4.1.0.
-Thus, I cannot check my package with Travis. See other related issues:
+According to Travis, tests are run for R 4.0.2, which exploits
+Bioconductor 3.12.
+
+``` r
+$ Rscript -e 'sessionInfo()'
+R version 4.0.2 (2020-06-22)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 16.04.6 LTS
+```
+
+In my package, I am dependent on Bioconductor 3.14 with R 4.1.0. Thus, I
+cannot check my package with Travis. See other related issues:
 <https://travis-ci.community/t/bioconductor-version-error/3332>
 
 <!-- badges: start -->
