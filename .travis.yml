@@ -1,5 +1,13 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
 language: R
-sudo: false
 cache: packages
+R: bioc-devel
+
+env:
+  - R_BIOC_VERSION: "3.12"
+
+script:
+  - Rscript -e 'BiocManager::version()'
+  - Rscript -e 'BiocManager::install(version = "3.12", ask = FALSE)'
+  - Rscript -e 'BiocManager::version()'
