@@ -18,7 +18,7 @@ pre-install devtools.
 
 ``` r
 install.package("devtools")
-install_github("MolecularAnalyzeR")
+devtools::install_github("MolecularAnalyzeR")
 ```
 
 ## Analysis workflow
@@ -31,19 +31,19 @@ library(MolecularAnalyzeR)
 listTCGAcohorts()
 ```
 
-2.  Download copy number variation data
+2.  Download copy number variation data.
 
 ``` r
 CNVdata <- downloadCNVdata(projectID = c("TCGA-READ", "TCGA-COAD"))
 ```
 
-3.  Download expression data
+3.  Download expression data.
 
 ``` r
 expData <- downloadExpData(projectID = c("TCGA-READ", "TCGA-COAD"))
 ```
 
-4.  Normalize expression data
+4.  Normalize expression data.
 
 ``` r
 normExpData <- normalizeExpData(expData = expData, method = "vst")
