@@ -1,8 +1,14 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
 language: R
+sudo: false
 cache: packages
-
 script:
-  - R -e 'install.packages("BiocManager")'
-  - R -e 'BiocManager::install(version = "3.13")'
+    - R -e 'install.packages("BiocManager")'
+    - R -e 'BiocManager::install(version = "3.13")'
+    - R -e  'BiocManager::install("TCGAbiolinks")'
+    - R -e  'BiocManager::install("DESeq2")'
+    - R -e  'BiocManager::install("biomaRt")'
+os:
+    - linux
+    - osx
