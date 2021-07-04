@@ -17,9 +17,21 @@ The goal of MolecularAnalyzeR is to checking correlation between gene expression
 and copy number variation for cohorts of patients analyzed within The Cancer 
 Genome Atlas project.
 
+According to Travis
+<!-- $ Rscript -e 'sessionInfo()' -->
+<!-- R version 4.0.2 (2020-06-22) -->
+<!-- Platform: x86_64-pc-linux-gnu (64-bit) -->
+<!-- Running under: Ubuntu 16.04.6 LTS -->
+which exploits Bioconductor 3.12.
+In my package, I am dependent on Bioconductor 3.14 with R 4.1.0.
+Thus, I cannot check my package with Travis.
+See other related issues:
+https://travis-ci.community/t/bioconductor-version-error/3332
+
 <!-- badges: start -->
   [![Travis build status](https://travis-ci.com/kkolmus/MolecularAnalyzeR.svg?branch=main)](https://travis-ci.com/kkolmus/MolecularAnalyzeR)
   <!-- badges: end -->
+[Logs](https://travis-ci.com/github/kkolmus/MolecularAnalyzeR/builds/231742122)
 
 ## Installation
 
