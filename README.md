@@ -11,7 +11,7 @@ In order to install the MolecularAnalyzeR package, you should
 pre-install devtools.
 
 ``` r
-install.package("devtools)
+install.package("devtools")
 install_github("MolecularAnalyzeR")
 ```
 
@@ -49,12 +49,14 @@ normExpData <- normalizeExpData(expData = expData, method = "vst")
     format: losses, gains, and wild type (b) and extracts normalized
     expression data for gene 2 from expression data matrix. The newly
     formed data frame is an input for statistical analysis and
-    visualization.
+    visualization. The package offers a toy dataset to play with.
 
 ``` r
 data_input <- prepareData(
   gene1 = "TP53", gene2 = "TSPAN6", 
   CNVdata = CNVdata, normExpData = normExpData)
+# toy data set
+data(inputSLanalyzeR)
 ```
 
 6.  Run statistical analysis. This function looks for statistical
